@@ -60,9 +60,9 @@ class Enclosure
 
     public function addDinosaur(Dinosaur $dinosaur): self
     {
-        /* if (!$this->canAddDinosaur($dinosaur)) {
+        if (!$this->canAddDinosaur($dinosaur)) {
             throw new NotABuffetException();
-        } */
+        }
 
         if (!$this->isSecurityActive()) {
             throw new DinosaursAreRunningRampantException('Are you craaazy?!?');
